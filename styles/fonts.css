@@ -1,0 +1,16 @@
+ @font-face {
+    font-family: Bold; 
+    src: url(fonts/Karla-Bold.ttf); 
+   }
+  @font-face {
+    font-family: BoldItalic; 
+    src: url(fonts/Karla-BoldItalic.ttf); 
+   }
+   @font-face {
+    font-family: Italic; 
+    src: url(fonts/Karla-Italic.ttf); 
+   }
+   @font-face {
+    font-family: Regular; 
+    src: url(fonts/Karla-Regular.ttf); 
+   }
