@@ -2,11 +2,15 @@
 	var last_message_id;
 	var load_message = function (text,author)//функция отрисовки обычного сообщения.
 	{
+		text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");//замена <> на их символьные эквиваленты,не воспринимаемые бразуером как тег.
+		author = author.replace(/</g, "&lt;").replace(/>/g, "&gt;");//замена <> на их символьные эквиваленты,не воспринимаемые бразуером как тег.
 		return "<div class = 'cont-left'><div class = 'message'> <img src='images/UserIcon.png'> <span class = 'text'>"+text+"</span>  <span class = 'author'>"+author+"</span> </div> </div>" ;
 	}
 			
 	var load_self_message = function (text,author)//функция отрисовки сообщения,написанного самим пользователем.
 	{
+		text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");//замена <> на их символьные эквиваленты,не воспринимаемые бразуером как тег.
+		author = author.replace(/</g, "&lt;").replace(/>/g, "&gt;");//замена <> на их символьные эквиваленты,не воспринимаемые бразуером как тег.
 		return "<div class = 'cont-right'> <div class = 'message self'> <img src='images/UserIcon.png'>  <span class = 'text'>"+text+"</span>   <span class = 'author'>"+author+"</span> </div> </div>";
 	}
 	$(document).ready(function() //функция подгружающая на странцу сообщеня из базы.

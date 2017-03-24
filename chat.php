@@ -19,7 +19,7 @@ session_start();
 	<header id ="top">
 		<a href = "/"><img id ='back' src ="images/IconBack.png"></a>
 		<img id ='more' src ="images/IconMore.png">
-		<p><?echo $_SESSION['username']?></p>
+		<p>Тестовое задание</p>
 	</header>
 	<div id = "messages-wrapping">
 	
@@ -27,7 +27,7 @@ session_start();
 	<div id="message-form">
 	 <form id='post'>
 	 	<input type="text" name="message" placeholder="Type your message...">
-	 	<input type="button" value="Send" onclick = "sendPost()">
+	 	<input type="button" value="&#10148" onclick = "sendPost()">
 	 </form>
 	</div>
 </div>
